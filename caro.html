@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pomodoro timer</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src = "game_logic.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+</head>
+<body>
+    <div id = "container">
+        <div class = "cells">
+            <button class="mode" id = "1" onclick="click1()"> pomodoro </button>
+            <button class="mode" id = "2" onclick="click2()"> short break</button>
+            <button class="mode" id = "3" onclick="click3()"> long break</button>
+            <button class="mode" id = "4" onclick="click4()"> set time</button>
+        </div>
+
+        <div id = "clock"> 
+            25:00
+        </div>
+
+        <div class = "setting"> 
+            <button id = "start" class = "mode--2" onclick="startCountDown()"> start </button>
+            <button class = "mode--3" onclick="reset()" > <i class = "fa fa-refresh"> </i> </button>
+            <button class = "mode--3" onclick="setBackground()"> <i class = "fa fa-bars"> </i> </button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
